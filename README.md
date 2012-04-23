@@ -1,5 +1,6 @@
 rpigps
 ======
+http://www.catb.org/gpsd/installation.html
 
     sudo apt-get install gpsd
     sudo apt-get install gpsd-clients
