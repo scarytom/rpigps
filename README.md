@@ -9,4 +9,7 @@ http://www.catb.org/gpsd/installation.html
     gpspipe -w > gpsdata.json
     
 https://github.com/mapnik/mapnik
+
 https://github.com/openstreetmap/osmosis
+
+https://github.com/CloudMade/Leaflet
