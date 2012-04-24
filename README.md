@@ -7,3 +7,6 @@ http://www.catb.org/gpsd/installation.html
     gpsd /dev/ttyUSB0 -b -n
 
     gpspipe -w > gpsdata.json
+    
+https://github.com/mapnik/mapnik
+https://github.com/openstreetmap/osmosis
