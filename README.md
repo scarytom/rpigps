@@ -1,13 +1,28 @@
 rpigps
 ======
-http://www.catb.org/gpsd/installation.html
+
+__Prerequisites on the Raspberry PI__
 
     sudo apt-get install gpsd
     sudo apt-get install gpsd-clients
-    gpsd /dev/ttyUSB0 -b -n
+    sudo dpkg-reconfigure gpsd
+
+The device will likely appear at `/dev/gps0`
+
+    gpsd /dev/gps0 -b -n
+
+To pipe GPS JSON data out:
 
     gpspipe -w > gpsdata.json
-    
+
+A CUI view can be obtained using:
+
+    cgps
+
+__References__
+
+http://www.catb.org/gpsd/installation.html
+
 https://github.com/mapnik/mapnik
 
 https://github.com/openstreetmap/osmosis
