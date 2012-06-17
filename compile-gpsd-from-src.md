@@ -7,7 +7,6 @@ __Install required packages__
 sudo apt-get install chrpath
 sudo apt-get install libncurses-dev
 sudo apt-get install python-dev
-sudo apt-get install libusb-1.0-0-dev
 sudo apt-get install libcap-dev
 ```
 
