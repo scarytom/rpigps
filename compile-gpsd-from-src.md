@@ -7,6 +7,14 @@ __Install required packages__
 sudo apt-get install chrpath
 sudo apt-get install libncurses-dev
 sudo apt-get install python-dev
+sudo apt-get install libusb-1.0-0-dev
+sudo apt-get install libcap-dev
+```
+
+__Header for timepps__
+```bash
+cd /usr/include
+sudo wget https://github.com/ago/pps-tools/raw/master/timepps.h
 ```
 
 __Install scons from source (as packaged version < 2.0.1)__
