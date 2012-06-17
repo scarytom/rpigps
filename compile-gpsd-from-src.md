@@ -6,6 +6,7 @@ __Install required packages__
 ```bash
 sudo apt-get install chrpath
 sudo apt-get install libncurses-dev
+sudo apt-get install python-dev
 ```
 
 __Install scons from source (as packaged version < 2.0.1)__
