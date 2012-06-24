@@ -1,0 +1,1 @@
+ACTION=="remove", SUBSYSTEM=="tty" RUN+="/usr/bin/rpigps-system-halt.sh"
