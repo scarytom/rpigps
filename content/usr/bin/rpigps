@@ -9,9 +9,11 @@ sleep 10
 
 gpxlogger > "$TRACK.gpx" &
 GPX_PID="$!"
+echo "gpxlogger pid $GPX_PID"
 
-gpspipe > "$TRACK.json" &
+gpspipe -w > "$TRACK.json" &
 JSON_PID="$!"
+echo "gpspipe pid $JSON_PID"
 
 trap "{ kill $GPX_PID; kill $JSON_PID; }" EXIT INT TERM
 wait
