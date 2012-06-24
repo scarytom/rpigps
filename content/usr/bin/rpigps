@@ -2,13 +2,15 @@
 set -e
 set -u
 
+TRACK="$HOME/track-$(date -u +%Y%m%d%H%M%S)"
+
 # give gpsd time to start
 sleep 10
 
-gpxlogger > ~/track1.gpx &
+gpxlogger > "$TRACK.gpx" &
 GPX_PID="$!"
 
-gpspipe > ~/track1.json &
+gpspipe > "$TRACK.json" &
 JSON_PID="$!"
 
 trap "{ kill $GPX_PID; kill $JSON_PID; }" EXIT INT TERM
