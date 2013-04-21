@@ -9,6 +9,7 @@ __Prerequisites on the Raspberry PI__
 
 The device will likely appear at `/dev/gps0`
 
+    stty -F /dev/ttyUSB0 ispeed 4800 && cat </dev/ttyUSB0
     gpsd /dev/gps0 -b -n
 
 To pipe GPS JSON data out:
